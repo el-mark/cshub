@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="list-group">
+    <a href="{{ url_for('sw2') }}" class="list-group-item list-group-item-action">SOFTWARE WORKSHOP 2</a>
+    <a href="{{ url_for('aiml') }}" class="list-group-item list-group-item-action">AI & MACHINE LEARNING</a>
+    <a href="{{ url_for('dsad') }}" class="list-group-item list-group-item-action">Data STRUCTURES & DATABASES</a>
+</div>
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="{{ url_for('sw2') }}">SOFTWARE WORKSHOP 2</a></li>
+    <li><a class="dropdown-item" href="{{ url_for('aiml') }}">AI & MACHINE LEARNING</a></li>
+    <li><a class="dropdown-item" href="{{ url_for('dsad') }}">Data STRUCTURES & DATABASES</a></li>
+  </ul>
+{% endblock content %}

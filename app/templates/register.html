@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content-section bg-dark text-white">
+    <div class="form-group">
+        <form method="Post" action="" novalidate>
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+            <legend class="border-bottom mb-4 text-white">Join Today</legend>
+                <div class="form-group">
+                    {{ form.username.label(class="form-control-label text-white") }}
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid", style="color: white;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg", style="color: white;") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label text-white") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid", style="color: white;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg", style="color: white;") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label(class="form-control-label text-white") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid", style="color: white;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg", style="color: white;") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.confirm_password.label(class="form-control-label text-white") }}
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password(class="form-control form-control-lg is-invalid", style="color: white;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.confirm_password(class="form-control form-control-lg", style="color: white;") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.date_of_birth.label(class="form-control-label text-white") }}
+                    {% if form.date_of_birth.errors %}
+                        {{ form.date_of_birth(class="form-control form-control-lg is-invalid", style="color: white;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.date_of_birth.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.date_of_birth(class="form-control form-control-lg", style="color: white;") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.submit }}
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock content %}
