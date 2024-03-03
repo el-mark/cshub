@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="color: white;">Articles</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='array_2.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Arrays vs Lists</h5>
+                <p class="card-text">Research about the differences between arrays and lists.</p>
+                <a href="{{ url_for('array_vs_list') }}" class="btn btn-primary" target="_blank">Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+</div>
+{% endblock content %}

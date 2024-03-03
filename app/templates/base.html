@@ -24,21 +24,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Content
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ url_for('sw2') }}">SOFTWARE WORKSHOP 2</a>
-                                <a class="dropdown-item" href="{{ url_for('aiml') }}">AI & MACHINE LEARNING</a>
-                                <a class="dropdown-item" href="{{ url_for('dsad') }}">Data STRUCTURES & DATABASES</a>
-                            </div>
-                        </li>
-                    </ul>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ url_for('sw2') }}">SOFTWARE WORKSHOP 2</a>
+                        <a class="dropdown-item" href="{{ url_for('aiml') }}">AI & MACHINE LEARNING</a>
+                        <a class="dropdown-item" href="{{ url_for('dsad') }}">Data STRUCTURES & DATABASES</a>
+                    </div>
+                </li>
+            </ul>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
