@@ -1,6 +1,7 @@
 from flask import render_template,redirect,url_for,flash
 from app import app
 from app.forms import RegistrationForm, LoginForm
+from app.models import Link
 
 @app.route('/',methods=['GET'])
 def home():
@@ -41,3 +42,8 @@ def dsad():
 @app.route('/array_vs_list',methods=['GET'])
 def array_vs_list():
     return render_template('array_vs_list.html')
+
+@app.route('/links',methods=['GET'])
+def links():
+    links = Link.query.all()
+    return render_template('links.html', links=links)
