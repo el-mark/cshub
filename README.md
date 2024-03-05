@@ -2,7 +2,8 @@
 Authors:
 - Wahib Ben Said
 - Mark Harmsen
-
+- Alyx Vega
+- Yen-Hsiang Lin
 
 ## References
 https://github.com/miguelgrinberg/microblog

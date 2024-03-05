@@ -47,3 +47,4 @@ def array_vs_list():
 def links():
     links = Link.query.all()
     return render_template('links.html', links=links)
+#comment test
