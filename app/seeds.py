@@ -1,10 +1,16 @@
-u1 = User(firstname='Alan', email='a@g.com')
-u2 = User(firstname='Peter', email='p@b.com')
-u3 = User(firstname='John', email='j@b.com')
+from app.models import User, Link, Like
+from app import db
+
+u1 = User(username='Alan', email='a@g.com', password='!#"123')
+u2 = User(username='Peter', email='p@b.com', password='!#"123')
+u3 = User(username='John', email='j@b.com', password='!#"123')
+
 print(u1)
 db.session.add(u1)
 db.session.add(u2)
 db.session.add(u3)
+
+# db.session.commit()
 
 l1 = Link(
     title='Data Structures',
